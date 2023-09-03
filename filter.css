@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+}
+.container {
+  height: 100vh;
+  max-width: 1300px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 2rem;
+  position: relative;
+}
+
+.search {
+  width: 250px;
+  border: 1px solid #555;
+  height: 30px;
+  outline: none;
+  border-radius: 6px;
+  color: #333;
+  font-size: 16px;
+  padding: 7px 2px;
+  margin-bottom: 2rem;
+  text-indent: initial;
+}
+
+h1 {
+  color: #555;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  margin-bottom: 1rem;
+}
+
+.cats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  font-weight: 400;
+  margin-bottom: 1.4rem;
+}
+
+.cat {
+  transition: 300ms ease all;
+  width: 80%;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 1.2px;
+  transform: scale(1);
+}
+
+.cat:hover {
+  background-color: #777;
+  color: #fff;
+  transform: scale(1.09);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.priceValue {
+  font-weight: 500;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow-x: hidden;
+  width: 70vw;
+}
+.product {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+  margin-left: 1.1rem;
+}
+
+.leftMenu {
+  border-right: 2px #777 solid;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  position: fixed;
+  width: 336px;
+  background: #faedcd89;
+}
+
+.content {
+  width: calc(100% - 336px);
+  margin-left: 336px;
+  /* display: inline-block; */
+}
+
+.product img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin: 0 auto;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+}
+.name,
+.priceText {
+  margin: 0.3rem auto;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #555;
+}
+
+.priceValue {
+  color: #555;
+}
